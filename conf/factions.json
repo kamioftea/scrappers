@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Architechs", 
+        "description": 
+"A crew from the Fraternity of Technology; disciplined, well-equipped and highly efficient at \
+recovering scrap. Working out of the Legacy-1 Archology to secure a foothold for Mankind, both \
+TruMan and NuMan.", 
+        "rivalFactionName": "Sons of Entropy", 
+        "aliases": {
+            "Commander": ["Master", "Masters"],
+            "Veteran": ["Warden", "Wardens"],
+            "Trooper": ["Apprentice", "Apprentices"]
+        }, 
+        "trait": {
+            "name": "Go and Do Likewise",
+            "description": "If the commander of this crew is unable to make a rout or strategy check, any Ready Veteran may do so as if it had the commander trait.",
+            "resources": {},
+            "tags": []
+        }
+    },
+    {
+        "name": "Ectopians", 
+        "description":
+"A crew of mutated plants and animals working for the rogue AI GAIA. Using only natuarl weapons \
+they persue the ectopian agenda of destrction of the Ancient Artifacts and other technology. \
+Waging war against ATHENA for dominance of New Eden.", 
+        "rivalFactionName": "Palladium ATHENA", 
+        "aliases": {
+            "Commander": ["Druid", "Druids"],
+            "Veteran": ["Stalker","Stalkers"],
+            "Trooper": ["Ranger","Rangers"]
+        }, 
+        "trait": {
+            "name": "GAIA's Bounty",
+            "description": "Blessed with an abundance of healthy provisions, Ectopian crews start the Game with a free Break Token to use Once per Game.",
+            "resources": {"Break Token": 1},
+            "tags": []
+        }    
+    },
+    {
+        "name": "", 
+        "description": "", 
+        "rivalFactionName": "", 
+        "aliases": {
+            "Commander": "",
+            "Veteran": "",
+            "Trooper": ""
+        }, 
+        "trait": {
+            "name": "",
+            "description": "",
+            "resources": {},
+            "tags": []
+        }
+    }     
+]
