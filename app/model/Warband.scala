@@ -1,5 +1,7 @@
 package model
 
+import play.api.libs.json._
+
 case class Warband(faction: Faction, members: List[Member], traits: Set[WarbandTrait])
 
 case class Member(memberType: MemberType, cbt: Int, cmd: Int, con: Int, traits: Set[MemberTrait], gear: Set[Gear], xp: Int)
@@ -33,9 +35,24 @@ object MemberType {
       Member(Trooper, 1, 1, 1, Set(), Set(), 0)
   }
 
-}
+  implicit val memberTypeReads: Reads[MemberType] = {
+    case JsString("Commander") => JsSuccess(Commander)
+    case JsString("Veteran") => JsSuccess(Veteran)
+    case JsString("Trooper") => JsSuccess(Trooper)
+    case _ => JsError("MemberType expects one of Commander, Veteran, or Trooper")
+  }
 
-case class Faction(name: String, description: String, rivalFactionName: String, aliases: Map[MemberType, String], factionTrait: Trait)
+  implicit val memberTypeWrites: Writes[MemberType] = {
+    case Commander => JsString("Commander")
+    case Veteran => JsString("Veteran")
+    case Trooper => JsString("Trooper")
+  }
+
+  implicit val memberTypeFormat: Format[MemberType] = Format(
+    memberTypeReads,
+    memberTypeWrites
+  )
+}
 
 case class Gear(name: String, traits: Set[GearTrait])
 

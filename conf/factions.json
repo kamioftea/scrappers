@@ -4,18 +4,9 @@
     "description": "A crew from the Fraternity of Technology; disciplined, well-equipped and highly efficient at recovering scrap. Working out of the Legacy-1 Archology to secure a foothold for Mankind, both TruMan and NuMan.",
     "rivalFactionName": "Sons of Entropy",
     "aliases": {
-      "Commander": [
-        "Master",
-        "Masters"
-      ],
-      "Veteran": [
-        "Warden",
-        "Wardens"
-      ],
-      "Trooper": [
-        "Apprentice",
-        "Apprentices"
-      ]
+      "Commander": ["Master", "Masters"],
+      "Veteran": ["Warden", "Wardens"],
+      "Trooper": ["Apprentice", "Apprentices"]
     },
     "trait": {
       "name": "Go and Do Likewise",
@@ -29,18 +20,9 @@
     "description": "A crew of mutated plants and animals working for the rogue AI GAIA. Using only natural weapons they pursue the Ectopian agenda of destruction of the Ancient Artifacts and other technology. Waging war against ATHENA for dominance of New Eden.",
     "rivalFactionName": "Palladium ATHENA",
     "aliases": {
-      "Commander": [
-        "Druid",
-        "Druids"
-      ],
-      "Veteran": [
-        "Stalker",
-        "Stalkers"
-      ],
-      "Trooper": [
-        "Ranger",
-        "Rangers"
-      ]
+      "Commander": ["Druid", "Druids"],
+      "Veteran": ["Stalker", "Stalkers"],
+      "Trooper": ["Ranger", "Rangers"]
     },
     "trait": {
       "name": "GAIA's Bounty",
@@ -56,9 +38,9 @@
     "description": "",
     "rivalFactionName": "",
     "aliases": {
-      "Commander": "",
-      "Veteran": "",
-      "Trooper": ""
+      "Commander": ["", ""],
+      "Veteran": ["", ""],
+      "Trooper": ["", ""]
     },
     "trait": {
       "name": "",

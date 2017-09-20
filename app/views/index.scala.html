@@ -1,5 +1,22 @@
-@()
+@import model.Faction
 
-@main("Welcome to Play") {
-  <h1>Welcome to Play!</h1>
+@(factions: Seq[Faction])
+
+@main("Test Factions") {
+    @for(faction <- factions) {
+        <div class="faction">
+            <h1>@faction.name</h1>
+            <p>@faction.description</p>
+            <dl>
+            @for((base, label) <- faction.aliases) {
+                <dt>@base</dt>
+                <dd>@label</dd>
+            }
+            </dl>
+            <p>
+                <strong>@faction.factionTrait.name</strong>
+                <em>@faction.factionTrait.description</em>
+            </p>
+        </div>
+    }
 }
